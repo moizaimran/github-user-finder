@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#141e30,#243b55);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+#container{
+    width:100%;
+    max-width:700px;
+    text-align:center;
+}
+
+h1{
+    color:white;
+    margin-bottom:25px;
+    font-size:2.2rem;
+}
+
+input{
+    width:65%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+button{
+    padding:14px 22px;
+    border:none;
+    border-radius:10px;
+    background:#238636;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+    margin-left:10px;
+}
+
+button:hover{
+    background:#2ea043;
+    transform:scale(1.05);
+}
+
+#profile-cont{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+}
+
+.p{
+    width:100%;
+    max-width:450px;
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.p:hover{
+    transform:translateY(-8px);
+}
+
+.p img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #238636;
+    object-fit:cover;
+    margin-bottom:18px;
+}
+
+.p h2{
+    color:#222;
+    margin-bottom:8px;
+}
+
+.p h3{
+    color:#666;
+    margin-bottom:18px;
+    font-weight:normal;
+}
+
+.p p{
+    text-align:left;
+    margin:10px 0;
+    color:#444;
+    padding:8px 12px;
+    background:#f4f4f4;
+    border-radius:8px;
+}
+
+.p a{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    background:#24292f;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.p a:hover{
+    background:#238636;
+    transform:scale(1.05);
+}
+
+@media(max-width:600px){
+
+    input{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    button{
+        width:100%;
+        margin-left:0;
+    }
+
+    .p{
+        padding:20px;
+    }
+
+    .p img{
+        width:110px;
+        height:110px;
+    }
+}
